@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane prefHeight="720" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CustomersSceneController">
+   <ButtonBar GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <buttons>
+          <Button fx:id="buttonRefresh" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Actualiser" />
+          <Button fx:id="buttonDisconnect" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Deconnexion" />
+      </buttons>
+   </ButtonBar>
+   <ButtonBar GridPane.rowIndex="1">
+      <buttons>
+          <Button fx:id="buttonReturn" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Retour" />
+          <Button fx:id="buttonEvents" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Evenements" />
+          <Button fx:id="buttonSales" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Ventes" />
+      </buttons>
+   </ButtonBar>
+    <ComboBox fx:id="comboBoxCustomers" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="148.0" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+   <TextFlow maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="275.0" GridPane.columnIndex="2">
+      <children>
+          <Label fx:id="labelCustomerUsername" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+          <Label fx:id="labelCustomerSubscription" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+          <Label fx:id="labelCustomerFirstName" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+          <Label fx:id="labelCustomerLastName" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+          <Label fx:id="labelCustomerEmail" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+          <Label fx:id="labelCustomerAdress" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+            <Label fx:id="labelCustomerPhone" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="280.0" />
+      </children>
+   </TextFlow>
+    <ListView fx:id="listViewMovements" prefHeight="400.0" prefWidth="400.0" GridPane.columnIndex="1" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+
+</GridPane>
