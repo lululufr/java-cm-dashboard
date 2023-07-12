@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <GridPane alignment="center" hgap="10" prefHeight="720" prefWidth="1080.0" vgap="10" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainSceneController">
    <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="4">
       <buttons>
@@ -49,6 +48,7 @@
     </BarChart>
    <ButtonBar GridPane.columnIndex="2" GridPane.rowIndex="4">
       <buttons>
+         <Button fx:id="buttonExport" mnemonicParsing="false" text="Exporter" />
           <Button fx:id="buttonRefresh" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Actualiser" />
           <Button fx:id="buttonDisconnect" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Deconnexion" />
       </buttons>
